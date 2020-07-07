@@ -1,0 +1,7 @@
+ol.posts > li {
+    margin-bottom: 3.2rem;
+}
+
+ol.posts > li:last-child {
+    margin-bottom: 0;
+}

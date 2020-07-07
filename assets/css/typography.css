@@ -1,0 +1,51 @@
+* {
+    text-rendering: optimizeLegibility;
+    --webkit-font-smoothing: antialiased;
+    --moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    /* font-family: "Merriweather"; */
+    font-family: "iA Writer Duospace";
+    font-size: 100%;
+    letter-spacing: 0;
+    font-size: 18px;
+    font-weight: 300;
+    overflow-wrap: break-word;
+}
+
+blockquote {
+    border-left: 4px solid black;
+    padding-left: 8px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+p { font-size: 1em; line-height: 1.45em}
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+a { color: #010101}
+a:hover { color: #0f0f0f}
+a:visited { color: #666} /* hail satan amirite */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "iA Writer Duospace";
+}
+
+h1::before { margin-left: calc(-1ch + -1rem); padding-right: 1rem; content: '#' }
+h1 { font-size: 2.2em; line-height: 2.4rem; padding-bottom: 1rem }
+
+h2::before { margin-left: calc(-2ch + -1rem); padding-right: 1rem; content: '##' }
+h2 { font-size: 1.8em; line-height: 2.7rem; padding-bottom: .8rem; }
+
+h3::before { margin-left: calc(-3ch + -1rem); padding-right: 1rem; content: '###' }
+h3 { font-size: 1.5em; line-height: 2.25rem; padding-bottom: .5rem; }
+
+h4::before { margin-left: calc(-4ch + -1rem); padding-right: 1rem; content: '####' }
+h4 { font-size: 1.1em; line-height: 1.7rem; padding-bottom: .2rem; }
+
+h5::before { margin-left: calc(-5ch + -1rem); padding-right: 1rem; content: '#####' }
+h5 { font-size: 0.9em; line-height: 1.2rem }
+
+h6::before { margin-left: calc(-6ch + -1rem); padding-right: 1rem; content: '######' }
+h6 { font-size: 0.6em; line-height: 0.9rem }

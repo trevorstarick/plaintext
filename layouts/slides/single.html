@@ -1,0 +1,17 @@
+<html>
+<head>
+{{ $options := (dict "targetPath" "slides.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $style := resources.Get "css/slides.scss" | resources.ToCSS $options }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<textarea id="source">
+{{- .RawContent -}}
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+	ratio: '16:9'
+});</script>
+</body>
+</html>

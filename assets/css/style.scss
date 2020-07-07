@@ -1,0 +1,32 @@
+@import "reset";
+@import "fonts","typography", "margins", "pre", "lists";
+@import "hacks";
+@import "header","posts";
+
+html {
+    padding: 1rem;
+}
+
+body {
+    max-width: 80ch; // set width of body to 80 characters
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    overflow-y: scroll;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+thead, tbody {
+    border-bottom: 2px solid black;
+}
+
+tbody > tr:nth-child(2n-1) {
+    background-color: #f7f7f7;
+}
+x
+th, td {
+    padding: 4px 12px;
+}

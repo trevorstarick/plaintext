@@ -1,0 +1,20 @@
+@import "reset";
+@import "fonts","typography", "margins", "pre", "lists";
+@import "hacks";
+@import "header","posts";
+
+pre {
+	width: auto !important;
+	margin-left: 0;
+}
+
+.remark-slide-content {
+	padding: 2em 5em !important;
+}
+
+
+.no-hash {
+	margin-left: -1rem;
+	padding-right: auto;
+	content: '';
+}

@@ -1,0 +1,24 @@
+code {
+    font-family: "Fira Code", monospace;
+    font-style: italic;
+    color: salmon;
+}
+
+pre {
+    padding: 1rem 2rem;
+    background-color: #272822;
+    white-space: pre-wrap;
+    line-height: 1.5rem;
+}
+
+pre > code {
+    font-style: normal;
+    /* color: #f8f8f2; */
+}
+
+@media (min-width: 120ch) {
+    pre {
+        width: 120%;
+        margin-left: -10%;
+    }
+}

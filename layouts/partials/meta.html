@@ -1,0 +1,15 @@
+<a href="{{ .RelPermalink }}"><b>{{ .Dir }}</b>{{ .Title }}</a>
+{{ range .Keywords }}
+<p>{{ . }}</p>
+{{ end }}
+
+
+
+{{ if .Params.slides }}
+<p>About {{div .FuzzyWordCount 60}} pages | {{mul .ReadingTime 10}} min | {{ .Date.Format "2006-01-02" }}</p>
+{{ else }} 
+<p>About {{ .FuzzyWordCount }} words | {{ .ReadingTime }} min | {{ .Date.Format "2006-01-02" }}</p>
+<p>{{ .Summary }}</p>
+<a href="{{ .RelPermalink }}">Read more...</a>
+{{ end }}
+

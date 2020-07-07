@@ -1,0 +1,16 @@
+section#header {
+    padding-bottom: 0.2rem;
+    margin-bottom: 1.2rem;
+
+    border-bottom: 2px solid black;
+    text-align: right;
+}
+
+section#header h3 {
+    padding-bottom: 0;
+}
+
+section#header h3::before {
+    margin-left: -1ch;
+    content: '' !important;
+}

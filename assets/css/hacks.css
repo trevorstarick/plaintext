@@ -1,0 +1,5 @@
+body {
+    overflow-y: scroll;
+    --webkit-overflow-scrolling: touch;
+    will-change: transform;
+}

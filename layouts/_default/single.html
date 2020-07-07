@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        
+        {{ if .Params.showTOC }}
+        <div id="toc">
+        {{ .TableOfContents }}
+        </div>
+        {{ end }}
+
+        <div id="content">
+        {{ .Content }}
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
